@@ -14,3 +14,18 @@ profile that DenyLocal login for any users who haven't migrated yet.
 
 Sample Use:
 Search for machines that have "rogue" local accounts not controlled by your IdP's controls.
+
+
+Look for Network Users:
+Search for mobile account users 
+
+
+Will return either "No Network Accounts" if no accounts exist or a list of the 
+short names of network accounts on a macOS device
+
+Sample Use:
+Use with smart groups in Jamf Pro to scope for NoMAD or Jamf Connect to demobilize
+user accounts.  For example, if no network accounts exist, remove the DeMobilize mechanism
+from Jamf Connect Login with an authchanger command.  Or, use the presence of no
+mobile accounts as the trigger to turn on Migrate flag in a Jamf Connect Login 
+configuration profile.
