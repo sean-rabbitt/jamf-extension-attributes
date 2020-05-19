@@ -3,6 +3,10 @@
 # Add a local user login alias that matches the user's IDP login for Jamf Connect Login if 
 # network is offline.  Assumes that you're running this as a policy from Jamf Pro scripts.  
 # If not, change the definition of the LOCALUSER variable below to the alternative method.
+#
+# Deploy with a Jamf Pro policy set to scope All Users and Specific Computers where
+# the specific computers is a smart group containing all machines that have Jamf Connect Login
+# installed.  Set trigger to Reoccuring Checkin and Execution Frequency to Once per User.
 # — SRABBITT May 19, 2020 1:13 PM
 
 # MIT License
