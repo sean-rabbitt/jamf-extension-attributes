@@ -29,3 +29,13 @@ user accounts.  For example, if no network accounts exist, remove the DeMobilize
 from Jamf Connect Login with an authchanger command.  Or, use the presence of no
 mobile accounts as the trigger to turn on Migrate flag in a Jamf Connect Login 
 configuration profile.
+
+
+Jamf Helper Utility:
+Uses the Jamf Helper app to put an alert on the screen for a user.
+
+Sample Use:
+When deployed with a Jamf Pro policy, use PARAMETER 4 for the title of the 
+window, PARAMETER 5 for a header on top of your important message,
+PARAMETER 6 for your message including \n newlines, and PARAMETER 7 for
+the text shown on the continue button.
