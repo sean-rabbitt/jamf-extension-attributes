@@ -39,3 +39,15 @@ When deployed with a Jamf Pro policy, use PARAMETER 4 for the title of the
 window, PARAMETER 5 for a header on top of your important message,
 PARAMETER 6 for your message including \n newlines, and PARAMETER 7 for
 the text shown on the continue button.
+
+Last Jamf Connect menu bar agent login within range:
+Find out if a user has logged into Jamf Connect successfully within a certain time frame in days
+
+Sample Use:
+Use as an extension attribute in Jamf Pro.  If a user hasn't logged in successfully in X days,
+you can use the EA to create a Smart Computer Group.  Remediate the issue however you wish, but
+some suggestions are to:
+* Add the DenyLocal preference set to TRUE for com.jamf.connect.login - forces network login on next
+	login even if FileVault is enabled
+* Use the Jamf Helper Utility as a script to force sign-in with a message explaining why they are
+	being required to log in
