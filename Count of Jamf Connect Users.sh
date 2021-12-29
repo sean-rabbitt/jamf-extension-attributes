@@ -53,7 +53,9 @@ for user in $(dscl . list /Users Password | awk '$2 != "*" {print $1}');do
 			# user is not a jamf connect user
 			echo "$user is Not a Jamf Connect User"
 		else
-			JamfConnectUserCount=$((JamfConnectUsers+1))
+			echo "$user is a Jamf Connect user"
+			JamfConnectUserCount=$((JamfConnectUserCount+1))
+			
 		fi
 	fi
 done
